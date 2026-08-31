@@ -17,18 +17,18 @@ def attendance_summary():
         print("You have selected: Attendance Summary")
 def exit_system():
         print("You have selected: Exit")
+def menu ():
+    print("Welcome to the School Attendance Management System!")
 
-print("Welcome to the School Attendance Management System!")
-
-print("1. Display All Students")
-print("2. Search Student")
-print("3. Mark Attendance")
-print("4. Update Attendance")
-print("5. Calculate Attendance Percentage")
-print("6. Display Attendance Status")
-print("7. Display Students Below Attendance Requirement")
-print("8. Attendance Summary")
-print("9. Exit")
+    print("1. Display All Students")
+    print("2. Search Student")
+    print("3. Mark Attendance")
+    print("4. Update Attendance")
+    print("5. Calculate Attendance Percentage")
+    print("6. Display Attendance Status")
+    print("7. Display Students Below Attendance Requirement")
+    print("8. Attendance Summary")
+    print("9. Exit")
 choice = int(input("Enter the number of the function you want to perform: "))
 if choice == 1:
         display_all_students()
@@ -50,3 +50,4 @@ elif choice == 9:
         exit_system()
 else:
         print("Invalid choice! Please select a number from 1 to 9.")
+menu()
